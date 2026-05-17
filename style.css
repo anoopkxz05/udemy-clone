@@ -23,6 +23,10 @@ a{
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid black;
+    position: sticky;
+    top: 0px;
+    background-color: white;
+    z-index: 10;
 }
 
 
@@ -75,6 +79,27 @@ a{
     color: #9217f0;
 }
 
+.navbar__s3__popup{
+    position: relative;
+}
+
+.navbar__s3__popup:hover .navbar__s3__popup__box{
+
+        display: block;
+        transition: 1s ease;
+}
+
+.navbar__s3__popup__box{
+    position: absolute;
+    border: solid 1px black;
+    background-color: white;
+    padding: 20px;
+    right: -20px;
+    border-radius: 3px;
+    top: 30px;
+    display: none;
+}
+
 /*---Categories---*/
 
 .categories{
@@ -102,6 +127,11 @@ a{
 
 /*---Sale image--*/
 
+.sale-image{
+    width: 100%;
+    position: relative;
+}
+
 .sale-image img{
     width: 100%;
 }
@@ -114,7 +144,7 @@ a{
     width: 300px;
     padding: 20px;
     position: absolute;
-    top: 170px;
+    top: 40px;
 }
 
 .sale__offer__container button{
@@ -149,7 +179,7 @@ a{
 
 .course__card{
     padding-top: 30px;
-    
+    margin-top: 10px;
     width: 190px;
     gap: 10px;
     flex-direction: column;
