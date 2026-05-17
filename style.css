@@ -145,6 +145,17 @@ a{
     padding: 20px;
     position: absolute;
     top: 40px;
+    animation: zoom 2s ease;
+    animation-iteration-count: 1;
+}
+
+@keyframes zoom {
+    0%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+    }
 }
 
 .sale__offer__container button{
